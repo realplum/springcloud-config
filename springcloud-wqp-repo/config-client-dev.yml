@@ -1,14 +1,3 @@
 info:
   version: 1.0.0
 
-eureka:
-  instance:
-    appname: springcloud-wqp-config-client
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 5 # 租期更新时间间隔（默认30秒）
-    lease-expiration-duration-in-seconds: 20 # 租期到期时间（默认90秒）
-    health-check-url-path: /actuator/health
-  client:
-    serviceUrl:
-      defaultZone: http://username:passwd@localhost:8762/eureka/,http://username:passwd@localhost:8763/eureka/
-    registry-fetch-interval-seconds: 10
