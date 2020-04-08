@@ -5,6 +5,7 @@ eureka:
   instance:
     appname: springcloud-wqp-config-client
     prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
     lease-renewal-interval-in-seconds: 5 # 租期更新时间间隔（默认30秒）
     lease-expiration-duration-in-seconds: 20 # 租期到期时间（默认90秒）
     health-check-url-path: /actuator/health
