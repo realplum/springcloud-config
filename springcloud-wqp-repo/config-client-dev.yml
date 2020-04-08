@@ -11,5 +11,5 @@ eureka:
     health-check-url-path: /actuator/health
   client:
     serviceUrl:
-      defaultZone: http://username:passwd@localhost:8761/eureka/
+      defaultZone: http://username:passwd@localhost:8762/eureka/,http://username:passwd@localhost:8763/eureka/
     registry-fetch-interval-seconds: 10
